@@ -1,0 +1,80 @@
+<RelativeLayout
+    android:id="@+id/root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    >
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Add task"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginBottom="12dp"
+        />
+
+    <EditText
+        android:id="@+id/task_to_be_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:layout_margin="16dp"
+        android:hint="Type your task"
+        />
+
+    <CheckBox
+        android:id="@+id/timer_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_to_be_done"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_to_be_done"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/timer_check_box"
+        android:layout_toRightOf="@id/timer_check_box"
+        android:text="Start timer"
+        android:textSize="16sp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/timer_check_box"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Done"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timer_check_box"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@id/done"
+        android:layout_toStartOf="@id/done"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

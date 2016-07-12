@@ -1,9 +1,7 @@
 package shashankm.circularrevealdemo;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.widget.FrameLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setLollipopAnimator() {
-        LollipopSceneAnimator.newInstance(this, container, R.layout.scene1, R.layout.scene2, R.transition.arc1);
+        SceneAnimator.newInstance(this, container, R.layout.scene1, R.layout.scene2, R.transition.arc1);
     }
 }
